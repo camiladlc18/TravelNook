@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-background-image: url('fondo.jpg');
-background-size: cover;
-background-color: rgba(0, 0, 0, 0.4);
-background-repeat: no-repeat; 
-background-blend-mode:color-burn;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
 
 
 }
@@ -42,9 +42,9 @@ nav ul li {
     font-size: 14px;
 }
 
-nav ul li a:hover{
-   text-decoration: 2px underline #0097b6;
-   
+nav ul li a:hover {
+    text-decoration: 2px underline #0097b6;
+
 }
 
 nav a {
@@ -58,17 +58,18 @@ nav a {
 .search-container {
     position: relative;
     width: 400px;
-  }
-  
-  #searchInput {
+}
+
+#searchInput {
     width: 100%;
     padding: 15px;
-    padding-right: 80px; 
+    padding-right: 80px;
     border-radius: 25px;
     border: 1px solid #ccc;
-  }
-  
-  #searchButton, #resetButton {
+}
+
+#searchButton,
+#resetButton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -78,50 +79,53 @@ nav a {
     background-color: #0097b2;
     color: white;
     font-size: 14px;
-  }
-  
-  #searchButton {
-    right: 100px;
-    border-radius: 5px;
-  }
-  
-  #resetButton {
-    right: 20px; 
-    background-color: #0097b2;
-    border-radius: 5px;
-  }
-  
-  #searchButton:hover {
-    background-color: green;
-  }
-  
-  #resetButton:hover {
-    background-color: darkred;
-  }
-  
-#info{
-   
-   width: 45%;
-   height: 80%;
-   margin: 100px 70px;
 }
 
-#info h2{
+#searchButton {
+    right: 100px;
+    border-radius: 5px;
+}
+
+#resetButton {
+    right: 20px;
+    background-color: #0097b2;
+    border-radius: 5px;
+}
+
+#searchButton:hover {
+    background-color: green;
+}
+
+#resetButton:hover {
+    background-color: darkred;
+}
+
+#info {
+    width: 45%;
+    height: 80%;
+    margin: 100px 70px;
+}
+
+#info h2 {
     color: #e9e4e4;
     width: 30%;
     margin-bottom: 40px;
     font-size: 70px;
-    
+
 }
 
-#info p{
+#info p {
     color: #e9e4e4;
     width: 50%;
     margin-bottom: 40px;
     font-size: 16px;
 }
 
-.booknow{
+
+
+
+
+.booknow {
     color: #e9e4e4;
     background-color: #0a3d74dc;
     padding: 12px 22px;
@@ -131,7 +135,194 @@ nav a {
     font-weight: bold;
 }
 
-.booknow:hover{
+.booknow:hover {
     color: #ffffff;
     background-color: #0058b5dc;
+}
+
+.recommendInfo {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    width: 40%;
+    color: #ffffff;
+    background-color: rgba(0, 17, 55, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 600px;
+    overflow-y: auto;
+    display: none;
+}
+
+
+#result {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+#result img {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: auto;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+#result p{
+    margin:10px 0px 25px 0px;
+}
+
+
+/*ABOUT US*/
+
+#team {
+    
+    padding: 40px;
+    text-align: center;
+}
+
+#team h2 {
+    color: #e9e4e4;
+    width: 30%;
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.teammember {
+    background-color: rgba(0, 17, 55, 0.5);
+    color: #e9e4e4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.teammember h3 {
+    margin: 10px 0;
+    
+}
+
+.teammember p {
+   
+    margin-bottom: 15px;
+}
+
+.role {
+    background-color: #0a3d74dc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 35px;
+    font-size: 14px;
+    color: #e9e4e4;
+
+}
+
+.role:hover {
+    background-color: #0056b3;
+}
+
+
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #e9e4e4;
+    width: 30%;
+    margin:20px 30px;
+    font-size: 70px;
+
+}
+
+#about p {
+    color: #e9e4e4;
+    text-align: start;
+    margin:20px 60px;
+    line-height: 1.6;
+    
+}
+
+/*CONTACT US*/
+.container_info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin:10%;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info h1 {
+    font-size: 66px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(1, 11, 32, 0.613);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 25px 0px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    background-color: transparent;
+    color:#dfebf8;
+}
+
+
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form label {
+   color: rgb(199, 199, 199);
+  
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #054386f6;
+    color: white;
+    font-size: 16px;
+    
+}
+
+.contact-form button:hover {
+    background-color: #055dbaf6;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+   <nav><img src="./logo.png" id="logo">
+    <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+        <li><a href="./about_us.html" id="about">About us</a></li>
+        <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+      </ul>   
+  <div class="search-container">
+  </div>
+</nav>
+
+<div class="container_info">
+    <div class="contact-info">
+        <h1>CONTACT US</h1>
+        <p>Get in touch</p>
+    </div>
+    <div class="contact-form">
+        <form >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message for us" required></textarea>
+            
+            <button type="submit" onclick="thankyou()">Submit</button>
+        </form>
+
+
+    </div>
+
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+         }
+        </script>
+
+
+
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
+
