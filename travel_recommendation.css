@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-image: url('fondo.jpg');
+background-size: cover;
+background-color: rgba(0, 0, 0, 0.4);
+background-repeat: no-repeat; 
+background-blend-mode:color-burn;
+
+
+}
+
+#logo {
+    width: 16%;
+    height: 70px;
+
+}
+
+
+nav {
+    background-color: #0b1320e9;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+   text-decoration: 2px underline #0097b6;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: #e9e4e4;
+    font-weight: bold;
+}
+
+/*search button*/
+
+.search-container {
+    position: relative;
+    width: 400px;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 15px;
+    padding-right: 80px; 
+    border-radius: 25px;
+    border: 1px solid #ccc;
+  }
+  
+  #searchButton, #resetButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 9px 13px;
+    cursor: pointer;
+    background-color: #0097b2;
+    color: white;
+    font-size: 14px;
+  }
+  
+  #searchButton {
+    right: 100px;
+    border-radius: 5px;
+  }
+  
+  #resetButton {
+    right: 20px; 
+    background-color: #0097b2;
+    border-radius: 5px;
+  }
+  
+  #searchButton:hover {
+    background-color: green;
+  }
+  
+  #resetButton:hover {
+    background-color: darkred;
+  }
+  
+#info{
+   
+   width: 45%;
+   height: 80%;
+   margin: 100px 70px;
+}
+
+#info h2{
+    color: #e9e4e4;
+    width: 30%;
+    margin-bottom: 40px;
+    font-size: 70px;
+    
+}
+
+#info p{
+    color: #e9e4e4;
+    width: 50%;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.booknow{
+    color: #e9e4e4;
+    background-color: #0a3d74dc;
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.booknow:hover{
+    color: #ffffff;
+    background-color: #0058b5dc;
+}
